@@ -3,8 +3,10 @@ include "qelib1.inc";
 
 qreg q[10]; //10 tane qubit oluşturuyoruz
 creg c[10]; //10 classic bit
+
+//once hadamart sonra da kontrollü faz kapısı uyguluyoruz.
 h q[0];
-cp(pi / 2) q[1], q[0];
+cp(pi / 2) q[1], q[0]; //q[1] kontrollü 
 cp(pi / 4) q[2], q[0];
 cp(pi / 8) q[3], q[0];
 cp(pi / 16) q[4], q[0];
